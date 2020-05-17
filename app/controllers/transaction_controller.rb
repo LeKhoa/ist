@@ -4,10 +4,10 @@ class TransactionController < ApplicationController
 
   def reset
     File.open("#{PATH}/user1.txt", "w") do |f|
-      f.write("1000")
+      f.write("10000")
     end
     File.open("#{PATH}/user2.txt", "w") do |f|
-      f.write("1000")
+      f.write("10000")
     end
 
     render json: {
