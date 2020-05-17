@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* git clone git@github.com:LeKhoa/ist.git
+* cd ist
+* yarn install --check-files
+* rails s -p 10300
+* bundle exec sidekiq -C config/sidekiq.yml
+* ruby stress_test.rb
